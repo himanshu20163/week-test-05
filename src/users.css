@@ -1,5 +1,6 @@
 .navbar-container{
     width: 100%;
+    border:2px solid green;
     height: 10vh;
     background-color: black;
     color: white;
@@ -8,6 +9,7 @@
 }
 .menu-list{
     width: 40%;
+    border:2px solid green;
     display: flex;
     justify-content: space-around;
     align-items: center;
