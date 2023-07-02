@@ -7,7 +7,7 @@ const Cart = () => {
 
   let cart = JSON.parse(localStorage.getItem("cart"));
   let products = JSON.parse(localStorage.getItem("products"));
-//   console.log(products);
+
 
   useEffect(() => {
     addtocart(id);
@@ -18,20 +18,11 @@ const Cart = () => {
         return product.id != productid;
     });
 
-    // cart.push(product);
-
     if (cart.length == 0) {
       cart.push(product);
     } 
-    
-    // else{
-    //     let res = cart.find(element => element.id == productid);
-    //     if(res == undefined){
-    //         cart.push(product);
-    //         console.log(cart);
-    //     }
-    // }
-        localStorage.setItem("cart", JSON.stringify(cart));
+
+    localStorage.setItem("cart", JSON.stringify(cart));
   }
 
   return <div>Cart</div>;
